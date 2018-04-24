@@ -1,1 +1,1 @@
-# dogs-site-start-template-project
+# Test site about Dogs with start template.
