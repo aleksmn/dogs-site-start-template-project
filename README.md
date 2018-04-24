@@ -1,1 +1,1 @@
-# Test site about Dogs with start template.
+# Test site about Dogs with start template
