@@ -34,16 +34,54 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-html, body
+html, body 
 	height: 100%
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 600px
+			height: 100vh
+			background-color: $dark
+			color: white
+			.top-line
+				padding-top: 10px;
+				position: absolute
+				width: 100%
+				z-index: 1
+
+.logo
+	img 
+		width: 60px
+		height: auto
+		margin-left: 30px
+
+.phone
+	position: absolute
+	right: 80px;
+	top: 14px
+	font-size: 22px
+	white-space: nowrap
+	.fa
+		color: white
+		font-size: 22px
+		margin-right: 3px
+
+section, header
+	position: relative
+	background-size: cover
+	// background-position: center
+	background-position: 40% 60%
+
+section
+	background-color: #fff
 
 .img-responsive
 	display: block
@@ -56,5 +94,21 @@ body
 ::selection
 	background-color: $accent
 	color: #fff
+
+	
+// Menu
+
+.hamburger
+	right: 0
+	position: absolute
+	.hamburger-box
+		width: 34px
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	background-color: white
+	width: 34px
+	border-radius: 0
+	height: 3px
+		
 
 @import "media" // Всегда в конце
