@@ -106,10 +106,10 @@ section
     color: #fff
     text-decoration: none
     background-color: $accent
-    padding: 15px 45px
+    padding: 16px 45px
     font-size: 13px
     text-transform: uppercase
-    font-weight: 600
+    font-weight: 600 
     letter-spacing: 3px
     border-radius: 2px
     text-align: center
@@ -234,6 +234,49 @@ section
 	position: relative
 	p 
 		margin-top: 40px
+	.button
+		margin-top: 25px
+
+.welcome
+	p
+		font-style: 14px
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		white-space: nowrap
+		margin: 0
+		margin-bottom: -10px
+		// lines
+		&::before, &::after
+			content: ''
+			height: 1px
+			width: 100% 
+			position: relative
+			background-color: #fff
+			display: inline-block
+		span
+			margin: 0 10px		
+	.h1
+		font-weight: 100
+		font-size: 69px
+		margin: 0
+		line-height: 1.6
+		border-bottom: 1px solid #fff
+		white-space: nowrap
+	strong
+		display: block
+		text-transform: uppercase
+		font-style: 17px
+		margin-top: 24px
+		.fa
+			margin-right: 10px
+			font-style: 12px
+			color: #555
+			&:last-child
+				margin-left: 10px
+				margin-right: inherit
+
+	
 
 
 @import "media" // Всегда в конце
