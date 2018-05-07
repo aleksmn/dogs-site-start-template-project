@@ -7416,7 +7416,7 @@ section, header {
   position: relative;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: 40% 60%; }
+  background-position: 20% 80%; }
 
 section {
   background-color: #fff; }
@@ -7579,7 +7579,7 @@ section {
   text-align: center;
   position: relative; }
   .header-composition p {
-    margin-top: 40px; }
+    margin-top: 27px; }
   .header-composition .button {
     margin-top: 25px; }
 
@@ -7605,11 +7605,12 @@ section {
     background-color: #fff;
     display: inline-block; }
   .welcome p span {
-    margin: 0 10px; }
+    margin: 0 10px;
+    font-size: 14px; }
 
 .welcome .h1 {
   font-weight: 100;
-  font-size: 69px;
+  font-size: 58px;
   margin: 0;
   line-height: 1.6;
   border-bottom: 1px solid #fff;
@@ -7619,14 +7620,67 @@ section {
   display: block;
   text-transform: uppercase;
   font-style: 17px;
-  margin-top: 24px; }
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: normal; }
   .welcome strong .fa {
     margin-right: 10px;
     font-style: 12px;
-    color: #555; }
+    color: #ddd; }
     .welcome strong .fa:last-child {
       margin-left: 10px;
       margin-right: inherit; }
+
+.header-social {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  height: 100%;
+  border-left: rgba(255, 255, 255, 0.1) 1px solid;
+  top: 0;
+  padding: 12px; }
+
+.soc {
+  margin: auto; }
+  .soc ul, .soc li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .soc a {
+    color: #2c2c2c;
+    font-size: 17px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    margin: 18px 0;
+    line-height: 38px;
+    -webkit-border-radius: 10em;
+            border-radius: 10em;
+    -webkit-transition: background-color .25s ease;
+    -o-transition: background-color .25s ease;
+    transition: background-color .25s ease; }
+    .soc a:hover {
+      background-color: rgba(255, 255, 255, 0.4); }
+
+.header-contacts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding: 12px 0;
+  width: 100%;
+  background-color: rgba(21, 21, 21, 0.35); }
+  .header-contacts .fa {
+    margin-right: 5px;
+    color: #fff; }
+  .header-contacts .phone-h {
+    font-family: montserrat, sans-serif;
+    text-align: center; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
